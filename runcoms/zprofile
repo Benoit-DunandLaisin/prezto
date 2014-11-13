@@ -75,6 +75,7 @@ if [[ ! -d "$TMPPREFIX" ]]; then
   mkdir -p "$TMPPREFIX"
 fi
 
-if [[ -f "~/.myprofile" ]]; then
-    source "~/.myprofile"
+if [[ -f "$HOME/.myprofile" ]]; then
+    source "$HOME/.myprofile"
+else
 fi

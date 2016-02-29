@@ -15,3 +15,11 @@ export WORKON_HOME=~/.virtualenvs
 mkdir -p $WORKON_HOME
 source /usr/local/bin/virtualenvwrapper.sh
 
+export CVSROOT=":pserver:bdunandlaisin@tigre_nis:/home/dev/cvsroot"
+
+source ${HOME}/.gitsubrepo/.rc
+
+if [ "${SSH_AGENT_PID}" = "" ]
+then
+    eval `ssh-agent`
+fi
